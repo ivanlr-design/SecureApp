@@ -1,6 +1,7 @@
 import winreg
 import win32com.client
 import json
+import requests
 import os
 import ctypes
 import time
@@ -308,7 +309,14 @@ def DetectNewProcesses():
                            
 Exception ERROR: {str(e)}
 ''')
-
+def Download():
+    s = requests.get("https://raw.githubusercontent.com/ivanlr-design/SecureApp/main/UI.ui?token=GHSAT0AAAAAACJK2D66NIQYBPYQGOYD52POZL7GBNA")
+    if s.status_code == 200:
+        return s.text
+    else:
+        messagebox.showerror("Failed To download")
+        sys.exit(1)
+    
 def obtener_programas_inicio():
     Programs = []
     Routes = []
@@ -335,11 +343,17 @@ if __name__ == "__main__":
         pass
     else:
         messagebox.showwarning("UI.ui is not installed","UI.ui IS NOT INSTALLED, GONNA DOWNLOAD!")
+        re = Download()
+        if re:
+            with open("UI.ui","w") as file:
+                file.write(re)
         time.sleep(1)
+
     if ctypes.windll.shell32.IsUserAnAdmin():
         pass
     else:
         messagebox.showwarning("PROGRAM IS NOT RUNNING WITH ADMINISTRATOR","PROGRAM IS NOT RUNNING WITH ADMINISTRATOR, SOME FEARURES ARE NOT ENABLED!")
+        
     Programs,Routes = obtener_programas_inicio()
     Program, Route = listar_tareas_programadas()
 
