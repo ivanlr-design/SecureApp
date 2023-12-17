@@ -1,0 +1,24 @@
+
+                           
+Exception ERROR: (-2147221008, 'No se ha llamado a CoInitialize.', None, None)
+
+                           
+Exception ERROR: (-2147221008, 'No se ha llamado a CoInitialize.', None, None)
+
+                           
+Exception ERROR: 'int' object is not callable
+
+                           
+Exception ERROR: 'int' object is not callable
+
+                           
+Exception ERROR: 'int' object is not callable
+
+                           
+Exception ERROR: 'int' object is not callable
+
+                           
+Exception ERROR: 'int' object is not callable
+
+                           
+Exception ERROR: 'int' object is not callable

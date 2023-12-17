@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1395</width>
+    <height>897</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(60,60, 60)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(131, 131, 131)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Cambria</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>CONTROL GRAPHICS</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QPushButton" name="Log_button">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>See LOGS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CurrentConexions">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>See Current Conexions</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="New_process">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>See New Processes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AutoRun">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>See New autoRun Application</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Discord">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Discord Support</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ProcessView">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Process View</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(91, 91, 91)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frame_9">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QStackedWidget" name="Pages">
+            <property name="currentIndex">
+             <number>4</number>
+            </property>
+            <widget class="QWidget" name="ProcessViewTable">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QPushButton" name="RefreshViewProcesses">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>REFRESH DATA</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="ProcessViewT">
+                <column>
+                 <property name="text">
+                  <string>PID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NAME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>RUNTIME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CMDLINE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MEMORY USAGE</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="SeeNewProcesses">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QPushButton" name="RefreshNewProcesses">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>REFRESH DATA</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="NewProcesses">
+                <column>
+                 <property name="text">
+                  <string>PID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NAME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>RUNTIME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CMDLINE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MEMORY USAGE</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page3">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QPushButton" name="RefreshConexions">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>Refresh Conexions</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="ConexionTable">
+                <column>
+                 <property name="text">
+                  <string>PID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>PROCESS NAME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>LOCAL IP</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>LOCAL PORT</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>REMOTE IP</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>REMOTE PORT</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>STATUS</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="Page4">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QPushButton" name="RefreshAutoRun">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>Refresh New Auto Run applications</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="AutoRunTable">
+                <column>
+                 <property name="text">
+                  <string>NAME</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>IS CURRENTLY RUNNING</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page5"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
