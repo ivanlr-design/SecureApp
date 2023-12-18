@@ -2,8 +2,10 @@ import winreg
 import win32com.client
 import json
 import requests
+import wmi
 import os
 import ctypes
+import win32com.client
 import time
 import platform
 import datetime
@@ -11,6 +13,7 @@ import sys
 import threading
 from win11toast import toast
 from tkinter import messagebox
+import signal
 import psutil
 from plyer import notification
 from PyQt5 import QtCore, uic,QtWidgets
@@ -32,6 +35,7 @@ class MainUI(QMainWindow):
         super(MainUI,self).__init__()
         self.setWindowTitle("MAIN CONTROL CENTER")
         uic.loadUi("UI.ui",self)
+        self.showFullScreen()
         self.Pages.setCurrentIndex(1)
         self.Discord.clicked.connect(self.OpenDiscord)
 
@@ -48,6 +52,12 @@ class MainUI(QMainWindow):
 
         self.AutoRunTable.setColumnWidth(0,600)
         self.AutoRunTable.setColumnWidth(1,600)
+        
+        self.SystemTable.setColumnWidth(0,200)
+        self.SystemTable.setColumnWidth(1,300)
+        self.SystemTable.setColumnWidth(2,300)
+        self.SystemTable.setColumnWidth(3,300)
+
 
         self.New_process.clicked.connect(self.Page2)
         self.ProcessView.clicked.connect(self.Page1)
@@ -58,9 +68,65 @@ class MainUI(QMainWindow):
         self.AutoRun.clicked.connect(self.Page4C)
         self.RefreshAutoRun.clicked.connect(self.LoadAutoRun)
         self.Log_button.clicked.connect(self.ShowLogs)
-
+        self.Monitor.clicked.connect(self.Page5)
+        self.System.clicked.connect(self.Page6)
+        self.PID.returnPressed.connect(self.kill_process_by_pid)
         self.full_screen = QShortcut(QKeySequence("F11"),self)
         self.full_screen.activated.connect(self.fullscreen)
+        try:
+            user = os.getlogin()
+        except:
+            user = "Uknown user"
+        try:
+            path = os.getcwd()
+        except:
+            path = "N/A"
+        
+        
+        
+
+        self.UserLabel.setText(f"Current User : {user}")
+        self.CurrentPath.setText(f"Current Path : {path}")
+        th3 = threading.Thread(target=self.UploadSystemTable)
+        th3.start()
+    def UploadSystemTable(self):
+        self.SystemTable.setRowCount(1)
+        while True:
+            systemcalls = psutil.cpu_stats().syscalls
+            cpu_freq_max = psutil.cpu_freq().max
+            cpu_freq_current = psutil.cpu_freq().current
+            try:
+                w = wmi.WMI(namespace="root\wmi")
+                CurrentTemperature = ((w.MSAcpi_ThermalZoneTemperature()[0].CurrentTemperature / 10.0)-273.15) 
+                CurrentTemperature = f"{CurrentTemperature}°C"
+            except:
+                CurrentTemperature = "ACCESS DENIED ERROR"
+            self.SystemTable.setItem(0, 0,QtWidgets.QTableWidgetItem(str(systemcalls)))
+            self.SystemTable.setItem(0, 1,QtWidgets.QTableWidgetItem(str(cpu_freq_current)))
+            self.SystemTable.setItem(0, 2,QtWidgets.QTableWidgetItem(str(cpu_freq_max)))
+            self.SystemTable.setItem(0, 3,QtWidgets.QTableWidgetItem(str(CurrentTemperature)))
+            time.sleep(1)
+
+    def kill_process_by_pid(self):
+        Pid = self.PID.text()
+        Pid = str(Pid).strip()
+        try:
+            Pid = int(Pid)
+            finded = False
+            for process in psutil.process_iter():
+                if process.pid == Pid:
+                    try:
+                        os.kill(process.pid,signal.SIGTERM)
+                        messagebox.showinfo(f"Process killed",f"Process named : {process.name()} with PID : {process.pid} was killed")
+                    except Exception as e:
+                       messagebox.showerror(f"Failed to kill process",f"FAILED TO KILL PROCESS NAMED : {process.name()} with PID : {process.pid} ERROR TYPE : {str(e)}")
+                    finded = True
+                
+            if finded == False:
+                messagebox.showwarning("PROCESS",F"PROCESS WITH PID : {Pid} WASN'T FINDED")
+        except: 
+            messagebox.showwarning("PID IS A NUMBER, NO NUMBER WAS PROVIDED","PID IS A NUMBER, NO NUMBER WAS PROVIDED")
+        
     def fullscreen(self):
         if self.isFullScreen():
             self.showNormal()
@@ -126,6 +192,10 @@ class MainUI(QMainWindow):
         self.Pages.setCurrentIndex(2)
     def Page4C(self):
         self.Pages.setCurrentIndex(3)
+    def Page5(self):
+        self.Pages.setCurrentIndex(4)
+    def Page6(self):
+        self.Pages.setCurrentIndex(5)
     def ShowLogs(self):
         try:
             current = os.getcwd()
@@ -310,7 +380,7 @@ def DetectNewProcesses():
 Exception ERROR: {str(e)}
 ''')
 def Download():
-    s = requests.get("https://raw.githubusercontent.com/ivanlr-design/SecureApp/main/UI.ui?token=GHSAT0AAAAAACJK2D66NIQYBPYQGOYD52POZL7GBNA")
+    s = requests.get("https://raw.githubusercontent.com/ivanlr-design/SecureApp/main/UI.ui")
     if s.status_code == 200:
         return s.text
     else:
@@ -322,6 +392,7 @@ def obtener_programas_inicio():
     Routes = []
     try:
         key_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
+
         start_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, key_path)
 
         for i in range(winreg.QueryInfoKey(start_key)[1]):
@@ -335,8 +406,26 @@ def obtener_programas_inicio():
         messagebox.showerror("ERROR MESSAGE",f"ERROR COULDN'T OPEN REGISTRY KEY FOR SEARCH AUTORUNS!!! ERROR TYPE: {str(e)}")
 num = 0
 
+class WindowsUpdateChecker:
+    def __init__(self):
+        self.update_session = win32com.client.Dispatch('Microsoft.Update.Session')
+
+    def get_pending_updates(self):
+        search_result = self.update_session.CreateUpdateSearcher().Search('IsInstalled=0')
+        updates = search_result.Updates
+
+        pending_updates = []
+        for update in updates:
+            pending_updates.append({
+                'Title': update.Title,
+                'Description': update.Description,
+                'KB': update.KBArticleIDs[0] if update.KBArticleIDs else 'N/A'
+            })
+
+        return pending_updates
 
 if __name__ == "__main__":
+    
     if platform.system() != "Windows":
         messagebox.showerror("ONLY WINDOWS SUPPORTED",f"ONLY WINDOWS SUPPORTED")
     if os.path.exists("UI.ui"):
@@ -353,7 +442,25 @@ if __name__ == "__main__":
         pass
     else:
         messagebox.showwarning("PROGRAM IS NOT RUNNING WITH ADMINISTRATOR","PROGRAM IS NOT RUNNING WITH ADMINISTRATOR, SOME FEARURES ARE NOT ENABLED!")
-        
+    
+    checker = WindowsUpdateChecker()
+    pending_updates = checker.get_pending_updates()
+
+    try:
+        if pending_updates:
+            for update in pending_updates:
+
+                messagebox.showwarning("WINDOWS UPDATE WAS DETECTED!",f"Windows Update\nTitle : {update['Title']}\nDescription : {update['Description']}\nKB Update : {update['KB']}")
+        else:
+            pass
+    except Exception as e:
+        with open("Logs.txt","a") as file:
+            file.write(f'''
+                        
+Exception ERROR: {str(e)}
+''')
+
+
     Programs,Routes = obtener_programas_inicio()
     Program, Route = listar_tareas_programadas()
 

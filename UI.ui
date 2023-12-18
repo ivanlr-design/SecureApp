@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1395</width>
+    <width>1178</width>
     <height>897</height>
    </rect>
   </property>
@@ -21,7 +21,10 @@
     <item>
      <widget class="QFrame" name="frame">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(131, 131, 131)</string>
+       <string notr="true">background-color: rgb(131, 131, 131);
+border: 2px solid #000000; /* Grosor, estilo y color del borde */
+border-radius: 5px; /* Opcional: Bordess redondeados */
+</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -88,6 +91,58 @@ QPushButton:hover {
                </property>
                <property name="text">
                 <string>See LOGS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Monitor">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Monitor</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="System">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>System Status</string>
                </property>
               </widget>
              </item>
@@ -170,32 +225,6 @@ QPushButton:hover {
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="Discord">
-               <property name="styleSheet">
-                <string notr="true">QPushButton {
-    background-color: #888888; /* Color de fondo gris más fuerte */
-    border: 1px solid #666666; /* Borde del botón */
-    color: #FFFFFF; /* Color del texto */
-    padding: 8px 16px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin decoración de texto */
-    font-size: 14px; /* Tamaño de fuente */
-    margin: 4px 2px; /* Margen externo */
-    border-radius: 4px; /* Bordes redondeados */
-}
-
-QPushButton:hover {
-    background-color: #666666; /* Color de fondo al pasar el ratón */
-    color: #FFFFFF; /* Color del texto al pasar el ratón */
-}
-</string>
-               </property>
-               <property name="text">
-                <string>Discord Support</string>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="QPushButton" name="ProcessView">
                <property name="styleSheet">
                 <string notr="true">QPushButton {
@@ -221,6 +250,32 @@ QPushButton:hover {
                </property>
               </widget>
              </item>
+             <item>
+              <widget class="QPushButton" name="Discord">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: #888888; /* Color de fondo gris más fuerte */
+    border: 1px solid #666666; /* Borde del botón */
+    color: #FFFFFF; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen externo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+QPushButton:hover {
+    background-color: #666666; /* Color de fondo al pasar el ratón */
+    color: #FFFFFF; /* Color del texto al pasar el ratón */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Discord Support</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </widget>
           </item>
@@ -233,7 +288,11 @@ QPushButton:hover {
     <item>
      <widget class="QFrame" name="frame_2">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(91, 91, 91)</string>
+       <string notr="true">background-color: rgb(91, 91, 91);
+border: 2px solid #000000; /* Grosor, estilo y color del borde */
+border-radius: 5px; /* Opcional: Bordess redondeados */
+
+</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -254,7 +313,7 @@ QPushButton:hover {
           <item>
            <widget class="QStackedWidget" name="Pages">
             <property name="currentIndex">
-             <number>4</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="ProcessViewTable">
              <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -286,6 +345,38 @@ QPushButton:hover {
               </item>
               <item>
                <widget class="QTableWidget" name="ProcessViewT">
+                <property name="styleSheet">
+                 <string notr="true">/* Estilo para el QTableWidget */
+QTableWidget {
+    background-color: #f2f2f2; /* Color de fondo de la tabla */
+    alternate-background-color: #e0e0e0; /* Color de fondo de filas alternas */
+    color: #333333; /* Color del texto */
+    gridline-color: #cccccc; /* Color de las líneas de la cuadrícula */
+    selection-background-color: #b3d9ff; /* Color de fondo de la selección */
+}
+
+/* Estilo para el encabezado de la tabla */
+QTableWidget::horizontalHeader {
+    background-color: #d9d9d9; /* Color de fondo del encabezado horizontal */
+    color: #333333; /* Color del texto del encabezado horizontal */
+    border: 1px solid #b3b3b3; /* Borde del encabezado horizontal */
+}
+
+/* Estilo para las secciones del encabezado de la tabla */
+QHeaderView::section {
+    background-color: #d9d9d9; /* Color de fondo de las secciones del encabezado */
+    color: #333333; /* Color del texto del encabezado */
+    border: 1px solid #b3b3b3; /* Borde de las secciones del encabezado */
+    padding: 4px; /* Espaciado interno de las secciones del encabezado */
+}
+
+/* Estilo para las celdas de la tabla */
+QTableWidget::item {
+    padding: 2px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #b3b3b3; /* Borde inferior de las celdas */
+}
+</string>
+                </property>
                 <column>
                  <property name="text">
                   <string>PID</string>
@@ -345,6 +436,38 @@ QPushButton:hover {
               </item>
               <item>
                <widget class="QTableWidget" name="NewProcesses">
+                <property name="styleSheet">
+                 <string notr="true">/* Estilo para el QTableWidget */
+QTableWidget {
+    background-color: #f2f2f2; /* Color de fondo de la tabla */
+    alternate-background-color: #e0e0e0; /* Color de fondo de filas alternas */
+    color: #333333; /* Color del texto */
+    gridline-color: #cccccc; /* Color de las líneas de la cuadrícula */
+    selection-background-color: #b3d9ff; /* Color de fondo de la selección */
+}
+
+/* Estilo para el encabezado de la tabla */
+QTableWidget::horizontalHeader {
+    background-color: #d9d9d9; /* Color de fondo del encabezado horizontal */
+    color: #333333; /* Color del texto del encabezado horizontal */
+    border: 1px solid #b3b3b3; /* Borde del encabezado horizontal */
+}
+
+/* Estilo para las secciones del encabezado de la tabla */
+QHeaderView::section {
+    background-color: #d9d9d9; /* Color de fondo de las secciones del encabezado */
+    color: #333333; /* Color del texto del encabezado */
+    border: 1px solid #b3b3b3; /* Borde de las secciones del encabezado */
+    padding: 4px; /* Espaciado interno de las secciones del encabezado */
+}
+
+/* Estilo para las celdas de la tabla */
+QTableWidget::item {
+    padding: 2px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #b3b3b3; /* Borde inferior de las celdas */
+}
+</string>
+                </property>
                 <column>
                  <property name="text">
                   <string>PID</string>
@@ -404,6 +527,38 @@ QPushButton:hover {
               </item>
               <item>
                <widget class="QTableWidget" name="ConexionTable">
+                <property name="styleSheet">
+                 <string notr="true">/* Estilo para el QTableWidget */
+QTableWidget {
+    background-color: #f2f2f2; /* Color de fondo de la tabla */
+    alternate-background-color: #e0e0e0; /* Color de fondo de filas alternas */
+    color: #333333; /* Color del texto */
+    gridline-color: #cccccc; /* Color de las líneas de la cuadrícula */
+    selection-background-color: #b3d9ff; /* Color de fondo de la selección */
+}
+
+/* Estilo para el encabezado de la tabla */
+QTableWidget::horizontalHeader {
+    background-color: #d9d9d9; /* Color de fondo del encabezado horizontal */
+    color: #333333; /* Color del texto del encabezado horizontal */
+    border: 1px solid #b3b3b3; /* Borde del encabezado horizontal */
+}
+
+/* Estilo para las secciones del encabezado de la tabla */
+QHeaderView::section {
+    background-color: #d9d9d9; /* Color de fondo de las secciones del encabezado */
+    color: #333333; /* Color del texto del encabezado */
+    border: 1px solid #b3b3b3; /* Borde de las secciones del encabezado */
+    padding: 4px; /* Espaciado interno de las secciones del encabezado */
+}
+
+/* Estilo para las celdas de la tabla */
+QTableWidget::item {
+    padding: 2px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #b3b3b3; /* Borde inferior de las celdas */
+}
+</string>
+                </property>
                 <column>
                  <property name="text">
                   <string>PID</string>
@@ -473,6 +628,38 @@ QPushButton:hover {
               </item>
               <item>
                <widget class="QTableWidget" name="AutoRunTable">
+                <property name="styleSheet">
+                 <string notr="true">/* Estilo para el QTableWidget */
+QTableWidget {
+    background-color: #f2f2f2; /* Color de fondo de la tabla */
+    alternate-background-color: #e0e0e0; /* Color de fondo de filas alternas */
+    color: #333333; /* Color del texto */
+    gridline-color: #cccccc; /* Color de las líneas de la cuadrícula */
+    selection-background-color: #b3d9ff; /* Color de fondo de la selección */
+}
+
+/* Estilo para el encabezado de la tabla */
+QTableWidget::horizontalHeader {
+    background-color: #d9d9d9; /* Color de fondo del encabezado horizontal */
+    color: #333333; /* Color del texto del encabezado horizontal */
+    border: 1px solid #b3b3b3; /* Borde del encabezado horizontal */
+}
+
+/* Estilo para las secciones del encabezado de la tabla */
+QHeaderView::section {
+    background-color: #d9d9d9; /* Color de fondo de las secciones del encabezado */
+    color: #333333; /* Color del texto del encabezado */
+    border: 1px solid #b3b3b3; /* Borde de las secciones del encabezado */
+    padding: 4px; /* Espaciado interno de las secciones del encabezado */
+}
+
+/* Estilo para las celdas de la tabla */
+QTableWidget::item {
+    padding: 2px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #b3b3b3; /* Borde inferior de las celdas */
+}
+</string>
+                </property>
                 <column>
                  <property name="text">
                   <string>NAME</string>
@@ -487,7 +674,120 @@ QPushButton:hover {
               </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="page5"/>
+            <widget class="QWidget" name="Pag">
+             <layout class="QFormLayout" name="formLayout">
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="PID">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border-color: #3498db;
+}
+</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Kill Process by PID</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page">
+             <layout class="QFormLayout" name="formLayout_2">
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="UserLabel">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Current User :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QLabel" name="CurrentPath">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Current Path :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QTableWidget" name="SystemTable">
+                <property name="styleSheet">
+                 <string notr="true">/* Estilo para el QTableWidget */
+QTableWidget {
+    background-color: #f2f2f2; /* Color de fondo de la tabla */
+    alternate-background-color: #e0e0e0; /* Color de fondo de filas alternas */
+    color: #333333; /* Color del texto */
+    gridline-color: #cccccc; /* Color de las líneas de la cuadrícula */
+    selection-background-color: #b3d9ff; /* Color de fondo de la selección */
+}
+
+/* Estilo para el encabezado de la tabla */
+QTableWidget::horizontalHeader {
+    background-color: #d9d9d9; /* Color de fondo del encabezado horizontal */
+    color: #333333; /* Color del texto del encabezado horizontal */
+    border: 1px solid #b3b3b3; /* Borde del encabezado horizontal */
+}
+
+/* Estilo para las secciones del encabezado de la tabla */
+QHeaderView::section {
+    background-color: #d9d9d9; /* Color de fondo de las secciones del encabezado */
+    color: #333333; /* Color del texto del encabezado */
+    border: 1px solid #b3b3b3; /* Borde de las secciones del encabezado */
+    padding: 4px; /* Espaciado interno de las secciones del encabezado */
+}
+
+/* Estilo para las celdas de la tabla */
+QTableWidget::item {
+    padding: 2px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #b3b3b3; /* Borde inferior de las celdas */
+}
+</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>System Calls</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CPU Current Frequency</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CPU Max Frequency</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Current CPU temperature</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
            </widget>
           </item>
          </layout>
