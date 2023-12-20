@@ -47,6 +47,8 @@ NewConexionRemotePort = []
 NewConexionStatus = []
 NewConexionPid = []
 
+Version = "v1.1.0"
+
 class MainUI(QMainWindow):
     def __init__(self):
         self.AllSsids = False
@@ -919,7 +921,7 @@ Exception ERROR: {str(e)}
     
     app = QApplication(sys.argv)
     GUI = MainUI()
-    GUI.setWindowTitle("CONTROL CENTER")
+    GUI.setWindowTitle(f"SECURE CONTROL CENTER {os.getlogin()} {Version}")
     GUI.show()
     
     

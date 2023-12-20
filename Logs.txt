@@ -234,3 +234,7 @@ ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
 ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
 ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
 ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
