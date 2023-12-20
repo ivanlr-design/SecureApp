@@ -14,3 +14,27 @@ Features :
 
 UI view Image 
 ![image](images/imagen1.png)
+
+Process View Image
+![image](images/ProcessView.png)
+
+Configuration View Image
+![image](images/configuration.png)
+
+Detect Images Part
+
+New Process Detected Image 
+![image](images/Process.png)
+
+New StartUp Detected Image
+![image](images/Startup.png)
+
+New Thread Detected Image
+![image](images/Thread.png)
+
+New Conexion Detected Image
+![image](images/Conexion.png)
+
+
+
+
