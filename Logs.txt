@@ -22,3 +22,215 @@ Exception ERROR: 'int' object is not callable
 
                            
 Exception ERROR: 'int' object is not callable
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (Can't get password)!
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+
+(GetWifiPasswordBySSID function) - Can't get password by netsh command (returncode error)!
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
+ERROR TYPE IN GET ALL SSID FUNCTION : list index out of range
