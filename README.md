@@ -38,6 +38,9 @@ Configuration View Image
 
 Detect Images Part
 
+All current Conexions Image
+![image](images/ConexionList.png)
+
 New Process Detected Image 
 
 ![image](images/Process.png)
@@ -54,6 +57,6 @@ New Conexion Detected Image
 
 ![image](images/Conexion.png)
 
-
+All current Conexions Ima
 
 
